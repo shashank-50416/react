@@ -1,0 +1,103 @@
+/* Sidebar Container */
+.sidenav-container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+  }
+  
+  /* Sidebar */
+  .sidenav {
+    background-color: #394b5d;
+    color: white;
+    width: 240px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease; /* Smooth transition */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .sidenav.collapsed {
+    width: 60px; /* Collapsed width */
+  }
+  
+  /* Sidebar Header */
+  .sidenav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #2f4052;
+  }
+  
+  .toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .brand-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  /* Menu Items */
+  .sidenav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    background-color: #506070;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .menu-icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+  }
+  
+  /* Collapsed Sidebar */
+  .sidenav.collapsed .menu-item span {
+    display: none; /* Hide labels */
+  }
+  
+  .sidenav.collapsed .brand-title {
+    display: none; /* Hide brand title */
+  }
+  
+  /* Smooth transition for collapsed icons */
+  .menu-icon {
+    transition: margin 0.3s ease;
+  }
+  
+  .sidenav.collapsed .menu-icon {
+    margin-right: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidenav {
+      width: 200px;
+    }
+  
+    .sidenav.collapsed {
+      width: 50px;
+    }
+  }
+  

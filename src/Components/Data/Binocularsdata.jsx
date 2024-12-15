@@ -1,4 +1,4 @@
-export const Binocularsdata = [
+const Binocularsdata=[
     {
       id: 1,
       Image: "https://m.media-amazon.com/images/I/51uv0HmGXVL._SX679_.jpg",
@@ -153,4 +153,5 @@ export const Binocularsdata = [
       lens: "mirrorless",
     },
 
-]
+];
+export default Binocularsdata

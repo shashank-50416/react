@@ -4,9 +4,11 @@ import Login from './Components/Login'
 import Signup from './Components/Signup'
 import Dashboard from './Components/Modules/Dashboard'
 import './App.css'
+import './Components/Modules/Sidenav.css'
 import Camera from './Components/Modules/Camera'
 import Digital from './Components/Modules/Digital'
 import Videocamera from './Components/Modules/Videocamera'
+
 
 
 
