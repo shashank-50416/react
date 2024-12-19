@@ -11,7 +11,7 @@ function Camera() {
           <Sidenav />
         </Col>
         <Col sm={10}>
-        <div className='lala'>
+        <div className='lala2'>
 
           {
             Cameradata.map((e) => (

@@ -8,7 +8,8 @@ import './Components/Modules/Sidenav.css'
 import Camera from './Components/Modules/Camera'
 import Digital from './Components/Modules/Digital'
 import Videocamera from './Components/Modules/Videocamera'
-
+import Binoculars from './Components/Modules/Binoculars'
+import Lens from './Components/Modules/Lens'
 
 
 
@@ -23,6 +24,8 @@ function App() {
          <Route path='/camera' element={<Camera/>}/>
          <Route path='/digital' element={<Digital/>}/>
          <Route path='/videocamera' element={<Videocamera/>}/>
+         <Route path='/Binoculars' element={<Binoculars/>}/>
+         <Route path='/Lens' element={<Lens/>}/>
         </Routes>
       </Router>
     </div>

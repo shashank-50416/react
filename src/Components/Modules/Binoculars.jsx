@@ -11,7 +11,7 @@ function Binoculars() {
           <Sidenav />
         </Col>
         <Col sm={10}>
-        <div className='lala'>
+        <div className='lala2'>
 
           {
             Binocularsdata.map((e) => (

@@ -1,4 +1,4 @@
-const Binocularsdata=[
+export const Binocularsdata=[
     {
       id: 1,
       Image: "https://m.media-amazon.com/images/I/51uv0HmGXVL._SX679_.jpg",
@@ -154,4 +154,3 @@ const Binocularsdata=[
     },
 
 ];
-export default Binocularsdata

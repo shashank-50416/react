@@ -1,4 +1,4 @@
- const lensdata = [
+ export const lensdata = [
     {
     id:1,
     image:"https://m.media-amazon.com/images/I/31Veccow7XL._SX300_SY300_QL70_FMwebp_.jpg",
@@ -167,13 +167,4 @@
         price:"19,490",
         Cameralens:"XC35 F2.0",
     },
-    {
-        id:21,
-        image:"https://m.media-amazon.com/images/I/41qdKBzCDSL._SX300_SY300_QL70_FMwebp_.jpg",
-        name:"TCL-X100 II Tele Conversion Lens",
-        brand:"Fujifilm ",
-        price:"28,650",
-        Cameralens:"35 Millimeters",
-    },
 ]
-export default lensdata

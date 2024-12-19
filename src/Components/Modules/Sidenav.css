@@ -2,7 +2,9 @@
 .sidenav-container {
     display: flex;
     height: 100vh;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
   
   /* Sidebar */

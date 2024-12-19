@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 
 function Dashboard() {
   const [activeTab, setActiveTab] = useState("Dashboard");
-  const display = Cameradata.slice(0, 4);
+  const cameraDisplay = Cameradata.slice(0, 4); // For Camera section
+  const videoCameraDisplay = Cameradata.slice(4, 8); // Replace with actual Video Camera data
 
   return (
     <div className="spotify-dashboard">
@@ -72,10 +73,11 @@ function Dashboard() {
           </Container>
         </Navbar>
 
+        {/* Camera Section */}
         <Container fluid className="dashboard-content">
-          <h2 className="content-title">Explore Our Collection</h2>
+          <h2 className="content-title">Explore Our Camera Collection</h2>
           <Row className="camera-grid">
-            {display.map((camera, index) => (
+            {cameraDisplay.map((camera, index) => (
               <Col md={6} lg={3} key={index}>
                 <Card className="camera-card">
                   <Card.Img
@@ -85,7 +87,7 @@ function Dashboard() {
                     className="camera-image"
                   />
                   <Card.Body>
-                    <Card.Title>{camera.name}</Card.Title>
+                    <Card.Title>{camera.name.slice(0, 10)}</Card.Title>
                     <Card.Text>
                       <strong>Brand:</strong> {camera.brand}
                     </Card.Text>
@@ -95,6 +97,42 @@ function Dashboard() {
               </Col>
             ))}
           </Row>
+          <div className="text-center">
+            <Link to={"/camera"} className="cam btn btn-outline-primary">
+              View All Cameras
+            </Link>
+          </div>
+        </Container>
+
+        {/* Video Camera Section */}
+        <Container fluid className="dashboard-content mt-5">
+          <h2 className="content-title">Explore Our Video Camera Collection</h2>
+          <Row className="videocamera-grid">
+            {videoCameraDisplay.map((videocamera, index) => (
+              <Col md={6} lg={3} key={index}>
+                <Card className="videocamera-card">
+                  <Card.Img
+                    variant="top"
+                    src={videocamera.Image}
+                    alt={videocamera.name}
+                    className="videocamera-image"
+                  />
+                  <Card.Body>
+                    <Card.Title>{videocamera.name.slice(0, 10)}</Card.Title>
+                    <Card.Text>
+                      <strong>Brand:</strong> {videocamera.brand}
+                    </Card.Text>
+                    <Button variant="outline-light">View Details</Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
+          <div className="text-center">
+            <Link to={"/videocamera"} className="cam btn btn-outline-primary">
+              View All Video Cameras
+            </Link>
+          </div>
         </Container>
       </div>
     </div>
