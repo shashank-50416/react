@@ -1,4 +1,4 @@
- const Digitaldata =[
+export const Digitaldata = [
     
     {
         id :1,
@@ -168,5 +168,5 @@
         image: "https://m.media-amazon.com/images/I/61SkZhbQVvL._SY355_.jpg",
         Opticalzoom: "20x",
     },
-]
-export default Digitaldata
+];
+ 

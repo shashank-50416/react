@@ -22,8 +22,8 @@ function App() {
           <Route path='/signup' element={<Signup/>} />
          <Route path='/' element={<Dashboard/>} />
          <Route path='/camera' element={<Camera/>}/>
-         <Route path='/digital' element={<Digital/>}/>
          <Route path='/videocamera' element={<Videocamera/>}/>
+         <Route path='/digital' element={<Digital/>}/>
          <Route path='/Binoculars' element={<Binoculars/>}/>
          <Route path='/Lens' element={<Lens/>}/>
         </Routes>
