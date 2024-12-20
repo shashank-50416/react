@@ -24,7 +24,7 @@ body {
   font-size: 1.1rem;
   font-weight: bold;
   color: #fff;
-  background: linear-gradient(90deg, #00d1b2, #008c75);
+  background: linear-gradient(90deg, #ff0000, #008c75);
   text-decoration: none;
   border-radius: 30px;
   border: none;
@@ -182,12 +182,12 @@ body {
   color: #333;
 }
 
-.camera-grid {
+.camera-grid .videocamera-grid,.digital-grid{
   display: flex;
   flex-wrap: wrap;
 }
 
-.camera-card {
+.camera-card,.videocamera-card,.digital-card{
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
@@ -195,30 +195,33 @@ body {
   background-color: white;
 }
 
-.camera-card:hover {
+.camera-card,.digital-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
 }
-
-.camera-image {
+.videocamera-card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+.camera-image,.videocamera.image,.digital.image {
   width: 100%;
   object-fit: cover;
   height: 200px;
   border-bottom: 1px solid #ddd;
 }
 
-.camera-card .card-body {
+.camera-card,.videocamera-card,.digital-card .card-body {
   padding: 20px;
 }
 
-.camera-card .card-title {
+.camera-card,.digital-card,.videocamera-card.card-title {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 15px;
   color: #333;
 }
 
-.camera-card .card-text {
+.camera-card ,.videocamera-card,.digital-card .card-text {
   font-size: 1rem;
   color: #666;
 }
@@ -248,12 +251,12 @@ button:hover {
     margin-left: 200px;
   }
 
-  .camera-grid {
+  .camera-grid,.videocamera-grid,.digital-grid {
     flex-direction: column;
     gap: 15px;
   }
 
-  .camera-card {
+  .camera-card,.videocamera-card,.digital-card {
     width: 100%;
   }
 
@@ -278,11 +281,11 @@ button:hover {
     padding: 10px;
   }
 
-  .camera-grid {
+  .camera-grid,.videocamera-grid,.digital-grid  {
     flex-direction: column;
   }
 
-  .camera-card {
+  .camera-card,.videocamera-card,.digital-card {
     width: 100%;
   }
 

@@ -1,4 +1,4 @@
-export const Videocameradata = [
+const Videocameradata = [
     { 
         id:1,
         name:"Alpha ILCE-6100Y 24.2 MP Mirrorless Digital SLR Camera with 16-50 mm & 55-210 mm Zoom Lenses, APS-C Sensor",
@@ -168,4 +168,4 @@ export const Videocameradata = [
         Photosensortechnology:"CMOS",	
     },
  ]; 
-  
+ export  default Videocameradata;

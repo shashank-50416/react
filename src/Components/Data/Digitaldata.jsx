@@ -1,4 +1,4 @@
-export const Digitaldata = [
+const Digitaldata = [
     
     {
         id :1,
@@ -169,4 +169,4 @@ export const Digitaldata = [
         Opticalzoom: "20x",
     },
 ];
- 
+export default Digitaldata;

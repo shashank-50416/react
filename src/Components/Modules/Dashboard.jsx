@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Container, Navbar, Nav, Card, Row, Col, Button } from 'react-bootstrap';
 import { Cameradata } from '../Data/Cameradata';
-import { Videocameradata } from '../Data/Videocameradata';
-import { Digitaldata } from '../Data/Digitaldata';
+import Videocameradata from '../Data/Videocameradata';
+import Digitaldata from '../Data/Digitaldata';
 import { Link } from 'react-router-dom';
 
 function Dashboard() {
@@ -66,7 +66,7 @@ function Dashboard() {
                 <Card className="camera-card">
                   <Card.Img variant="top" src={camera.Image} alt={camera.name} className="camera-image" />
                   <Card.Body>
-                    <Card.Title>{camera.name}</Card.Title>
+                    <Card.Title>{camera.name.slice(0, 20)}{camera.name.length > 20 ? '...' : ''}</Card.Title> {/* Slicing the name */}
                     <Card.Text>
                       <strong>Brand:</strong> {camera.brand}
                     </Card.Text>
@@ -90,9 +90,9 @@ function Dashboard() {
             {videoCameraDisplay.map((videocamera, index) => (
               <Col md={6} lg={3} key={index}>
                 <Card className="videocamera-card">
-                  <Card.Img variant="top" src={videocamera.Image} alt={videocamera.name} className="videocamera-image" />
+                  <Card.Img variant="top" src={videocamera.image} alt={videocamera.name} className="videocamera-image" />
                   <Card.Body>
-                    <Card.Title>{videocamera.name}</Card.Title>
+                    <Card.Title>{videocamera.name.slice(0, 20)}{videocamera.name.length > 20 ? '...' : ''}</Card.Title> {/* Slicing the name */}
                     <Card.Text>
                       <strong>Brand:</strong> {videocamera.brand}
                     </Card.Text>
@@ -116,9 +116,9 @@ function Dashboard() {
             {digitalDisplay.map((digital, index) => (
               <Col md={6} lg={3} key={index}>
                 <Card className="digital-card">
-                  <Card.Img variant="top" src={digital.Image} alt={digital.name} className="digital-image" />
+                  <Card.Img variant="top" src={digital.image} alt={digital.name} className="digital-image" />
                   <Card.Body>
-                    <Card.Title>{digital.name}</Card.Title>
+                    <Card.Title>{digital.name.slice(0, 20)}{digital.name.length > 20 ? '...' : ''}</Card.Title> {/* Slicing the name */}
                     <Card.Text>
                       <strong>Brand:</strong> {digital.brand}
                     </Card.Text>

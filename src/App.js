@@ -10,6 +10,8 @@ import Digital from './Components/Modules/Digital'
 import Videocamera from './Components/Modules/Videocamera'
 import Binoculars from './Components/Modules/Binoculars'
 import Lens from './Components/Modules/Lens'
+import { Cameradata } from './Components/Data/Cameradata'
+import CameraDisplay from './Components/Modules/Show/CameraDisplay' 
 
 
 
@@ -22,10 +24,13 @@ function App() {
           <Route path='/signup' element={<Signup/>} />
          <Route path='/' element={<Dashboard/>} />
          <Route path='/camera' element={<Camera/>}/>
+         <Route path="/" element={<Camera />} />
+         <Route path="/camera/:id" element={<CameraDisplay />} /> 
          <Route path='/videocamera' element={<Videocamera/>}/>
          <Route path='/digital' element={<Digital/>}/>
          <Route path='/Binoculars' element={<Binoculars/>}/>
          <Route path='/Lens' element={<Lens/>}/>
+         <Route path='/cameradata' element={<Cameradata/>}/>
         </Routes>
       </Router>
     </div>
