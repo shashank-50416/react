@@ -2,10 +2,10 @@ export const Cameradata = [
     {
       id: 1,
       Image: "https://m.media-amazon.com/images/I/61Oo3UMz2uL._SL1500_.jpg",
-      name: "Sony Alpha Zv-E1 Full-Frame Interchangeable-Lens Mirrorless Vlog Digital Artificial Intelligence Based Autofocus ",
+      name: "Sony Alpha Zv-E1 Full-Frame Interchangeable-Lens Mirrorless Vlog Digital Artificial Intelligence Based Autofocus",
       brand: "Sony",
       price: "1,88,990",
-      lens: "mirrorless",
+      lens: "mirrorless"
     },
     {
       id: 2,

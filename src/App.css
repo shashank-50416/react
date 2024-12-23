@@ -789,3 +789,99 @@ button:hover {
     padding: 12px;
   }
 }
+/* details*/
+.container {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Row and Column Layout */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.col-md-2 {
+  padding: 0;
+}
+
+.col-md-10 {
+  padding: 0 20px;
+  padding-left: 40px;
+}
+
+/* Side Navigation Styles */
+
+/* Topbar Styles */
+.topbar {
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Camera Details Styling */
+.data {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.data p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Product Image Styling */
+.da img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+.da img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .col-md-2 {
+      display: none;
+  }
+
+  .col-md-10 {
+      padding: 0;
+  }
+
+  .container {
+      padding: 10px;
+  }
+
+  .topbar {
+      font-size: 1rem;
+  }
+
+  .data p {
+      font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .data p {
+      font-size: 0.9rem;
+  }
+  
+  .da img {
+      max-width: 90%;
+  }
+}
