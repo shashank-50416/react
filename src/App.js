@@ -13,6 +13,9 @@ import Binoculars from './Components/Modules/Binoculars';
 import Lens from './Components/Modules/Lens';
 import CameraDetails from './Components/Details/CameraDetails';
 import VideocameraDetails from './Components/Details/VideocameraDetails';
+import LensDetails from './Components/Details/LensDetails';
+import DigitalDetails from './Components/Details/DigitalDetails';
+
 
 function App() {
   return (
@@ -24,10 +27,12 @@ function App() {
         <Route path="/camera" element={<Camera />} />
         <Route path='/camera/:id' element={< CameraDetails/>} />
         <Route path="/videocamera" element={<Videocamera />} />
-        <Route path="/videocamer/id" element={<VideocameraDetails />} />
+        <Route path="/videocamera/:id" element={<VideocameraDetails/>} />
         <Route path="/digital" element={<Digital />} />
+        <Route path="/digital/:id" element={<DigitalDetails />} />
         <Route path="/binoculars" element={<Binoculars />} />
         <Route path="/lens" element={<Lens />} />
+        <Route path="/lens/:id" element={<LensDetails />} />
       </Routes>
     </Router>
   );

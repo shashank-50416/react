@@ -19,7 +19,7 @@ const Videocameradata = [
         id:3,
         name:" HC-V785GW-K Consumer Camcorder with Optical 20x Zoom ",
         brand:"Panasonic ",
-        price:"HC-V785GW-K Consumer Camcorder with Optical 20x Zoom ",
+        price:"39,859",
         image:"https://m.media-amazon.com/images/I/41bOUXzQLML._SX425_.jpg",
         Photosensortechnology:"CCD",	
     },

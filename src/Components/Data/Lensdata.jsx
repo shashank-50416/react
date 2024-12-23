@@ -1,4 +1,4 @@
- export const lensdata = [
+ const Lensdata = [
     {
     id:1,
     image:"https://m.media-amazon.com/images/I/31Veccow7XL._SX300_SY300_QL70_FMwebp_.jpg",
@@ -168,3 +168,4 @@
         Cameralens:"XC35 F2.0",
     },
 ]
+export default Lensdata
