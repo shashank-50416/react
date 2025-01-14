@@ -790,72 +790,20 @@ button:hover {
   }
 }
 /* details*/
+/* Container Styles */
 .container {
-  width: 100%;
-  display: flex;
-  margin-top: 30px;
-  padding: 20px;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  padding: 40px;
+  font-family: 'Roboto', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Row and Column Layout */
-.row {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.col-md-2 {
-  padding: 0;
-}
-
-.col-md-10 {
-
-  padding-left: 40px;
-}
-
-/* Side Navigation Styles */
-
-/* Topbar Styles */
-.topbar {
-  background-color: #003366;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
-/* Camera Details Styling */
-.data {
-  
-  font-size: 1.1rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.data p {
-  
-  font-size: 1.2rem;
-  color: #e63b3b;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin: 10px 0;
-  line-height: 1.6;
-  letter-spacing: 1px;
-  padding-left: 10%;
-}
-
-/* Product Image Styling */
+/* Product Image */
 .da img {
   width: 100%;
   max-width: 350px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
@@ -863,26 +811,144 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .col-md-2 {
-      display: none;
-  }
+/* Product Info */
+.data {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
 
-  .col-md-10 {
-      padding: 0;
-  }
+.data p {
+  margin: 10px 0;
+}
 
+.data p strong {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Buy Now Button */
+.buy-now-button {
+  margin-top: 30px;
+  background-color: #ff6f61;
+  border-color: #ff6f61;
+  padding: 12px 24px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  font-weight: bold;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.buy-now-button:hover {
+  background-color: #e65c54;
+  border-color: #e65c54;
+  cursor: pointer;
+}
+
+/* Modal Styles */
+.modal-header {
+  background-color: #f8f8f8;
+  border-bottom: 2px solid #ff6f61;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff6f61;
+}
+
+.modal-body {
+  font-size: 18px;
+  padding: 20px;
+}
+
+h5 {
+  font-weight: 700;
+  color: #333;
+}
+
+button {
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-weight: bold;
+}
+
+/* Payment Method Buttons */
+button:focus {
+  box-shadow: none;
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+button.outline-success {
+  border: 2px solid #ff6f61;
+  color: #ff6f61;
+  background-color: white;
+}
+
+button.outline-success:hover {
+  background-color: #ff6f61;
+  color: white;
+}
+
+button.success {
+  background-color: #4caf50;
+  border-color: #4caf50;
+  color: white;
+}
+
+button.success:hover {
+  background-color: #45a049;
+}
+
+/* Footer Styles */
+.modal-footer {
+  background-color: #f8f8f8;
+  border-top: 2px solid #ff6f61;
+}
+
+.modal-footer button {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+/* Cancel Button */
+.modal-footer button.secondary {
+  background-color: #bbb;
+  border-color: #bbb;
+}
+
+.modal-footer button.secondary:hover {
+  background-color: #999;
+  border-color: #999;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
   .container {
-      padding: 10px;
+      padding: 20px;
   }
 
-  .topbar {
-      font-size: 1rem;
+  .da img {
+      width: 100%;
+      max-width: 300px;
   }
 
-  .data p {
-      font-size: 1rem;
+  .data {
+      font-size: 16px;
+  }
+
+  .buy-now-button {
+      font-size: 16px;
+      width: auto;
+  }
+
+  button {
+      font-size: 14px;
   }
 }
 

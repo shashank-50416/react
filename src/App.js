@@ -1,4 +1,3 @@
-// App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './Components/Login';
@@ -15,26 +14,28 @@ import CameraDetails from './Components/Details/CameraDetails';
 import VideocameraDetails from './Components/Details/VideocameraDetails';
 import LensDetails from './Components/Details/LensDetails';
 import DigitalDetails from './Components/Details/DigitalDetails';
-
+import { CartProvider } from './Components/Context/CartContext'; // Correct CartProvider import
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/" element={<Dashboard />} />
-        <Route path="/camera" element={<Camera />} />
-        <Route path='/camera/:id' element={< CameraDetails/>} />
-        <Route path="/videocamera" element={<Videocamera />} />
-        <Route path="/videocamera/:id" element={<VideocameraDetails/>} />
-        <Route path="/digital" element={<Digital />} />
-        <Route path="/digital/:id" element={<DigitalDetails />} />
-        <Route path="/binoculars" element={<Binoculars />} />
-        <Route path="/lens" element={<Lens />} />
-        <Route path="/lens/:id" element={<LensDetails />} />
-      </Routes>
-    </Router>
+    <CartProvider> {/* Wrap the entire app with CartProvider */}
+      <Router>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/camera" element={<Camera />} />
+          <Route path='/camera/:id' element={<CameraDetails />} />
+          <Route path="/videocamera" element={<Videocamera />} />
+          <Route path="/videocamera/:id" element={<VideocameraDetails />} />
+          <Route path="/digital" element={<Digital />} />
+          <Route path="/digital/:id" element={<DigitalDetails />} />
+          <Route path="/binoculars" element={<Binoculars />} />
+          <Route path="/lens" element={<Lens />} />
+          <Route path="/lens/:id" element={<LensDetails />} />
+        </Routes>
+      </Router>
+    </CartProvider>
   );
 }
 

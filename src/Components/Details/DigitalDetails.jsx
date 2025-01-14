@@ -1,10 +1,10 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import Digitaldata from '../../Data/Digitaldata';  // Correct import based on your folder structure
+  // Correct import based on your folder structure
 import Sidenav from '../Modules/Sidenav';  // Correct import based on your folder structure
-import Topbar from '../Modules/Topbar';  // Correct import based on your folder structure
+import Topbar from '../Topbar'; // Correct import based on your folder structure
 import { useParams } from 'react-router-dom';
-
+import Digitaldata from '../Data/Digitaldata';
 function DigitalDetails() {
   let { id } = useParams();  // Get the id from the URL
   let productdet = Digitaldata.find((item) => item.id === parseInt(id));  // Find the product based on the id
