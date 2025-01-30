@@ -3,7 +3,7 @@ const Videocameradata = [
         id:1,
         name:"Alpha ILCE-6100Y 24.2 MP Mirrorless Digital SLR Camera with 16-50 mm & 55-210 mm Zoom Lenses, APS-C Sensor",
         brand:"Sony",
-        price:"73,525",
+        price:"7555,525",
         image:"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRwqCkc_dTRoFL6M883cedGL1aHmxOZdaFdvBEV2vlOPCZ6WFdxXnaUTeIcj_gZtllHTSlB6F0YHUf52Wn8PSunV6_Xb35HICQ6Xmn3RoPWJCL0s-p5Hjzj",
         Photosensortechnology:"CMOS",	
     },
