@@ -35,9 +35,9 @@ function Login() {
                   className="form-control login-input"
                 />
               </div>
-              <button type="submit" className="btn btn-primary w-100 login-submit-button">
+               <Link to="/react"><button type="submit" className="btn btn-primary w-100 login-submit-button">
                 Login
-              </button>
+              </button></Link>
               <div className="login-footer">
                 <Link to="/forgot-password" className="forgot-password-link">
                   Forgot Password?

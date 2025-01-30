@@ -28,7 +28,7 @@ function Sidenav() {
         {/* Menu Items */}
         <ul className="sidenav-menu">
           <li className="menu-item">
-            <Link to="/" aria-label="Dashboard">
+            <Link to="/react" aria-label="Dashboard">
               <FiHome className="menu-icon" />
               {!collapsed && <span>Dashboard</span>}
             </Link>

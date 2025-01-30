@@ -20,7 +20,7 @@ function Dashboard() {
         <h2 className="brand-title">Camera World</h2>
         <ul className="sidebar-menu">
           <li className={activeTab === "Dashboard" ? "active" : ""} onClick={() => setActiveTab("Dashboard")}>
-            <Link to={""}>Dashboard</Link>
+            <Link to={"\react"}>Dashboard</Link>
           </li>
           <li className={activeTab === "Cameras" ? "active" : ""} onClick={() => setActiveTab("Cameras")}>
             <Link to={"/camera"}>Cameras</Link>

@@ -7,7 +7,7 @@ function Topbar() {
   return (
     <Navbar bg="light" expand="lg" sticky="top" className="topbar">
       <Container>
-        <Navbar.Brand as={Link} to="/" className="logo">
+        <Navbar.Brand as={Link} to="/dashboard" className="logo">
           <img src="/logo.png" alt="Logo" className="logo-img" />
           <span className="logo-text">ShopEase</span>
         </Navbar.Brand>
@@ -17,7 +17,7 @@ function Topbar() {
         
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/" className="nav-link">Home</Nav.Link>
+            <Nav.Link as={Link} to="/dashboard" className="nav-link">Home</Nav.Link>
             <Nav.Link as={Link} to="/camera" className="nav-link">Cameras</Nav.Link>
             <Nav.Link as={Link} to="/digital" className="nav-link">Digital</Nav.Link>
             <Nav.Link as={Link} to="/lens" className="nav-link">Lenses</Nav.Link>
